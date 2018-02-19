@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bear Sightings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" id="header">
+            <h1 class="text-center">Bear Sighting API</h1>
+            <h3 class="text-center">Current time:
+                <span id="current-time"></span>
+            </h3>
+            <h5 class="text-center">(Refresh page for updated sightings)</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Current Bear Sightings</strong>
+                        </h3>
+                    </div>
+                    <!-- Table  -->
+                    <div class="panel-body">
+                        <table class="table table-hover" id='bear-table'>
+                            <thead>
+                                <tr>
+                                    <th>Bear Type</th>
+                                    <th>Notes</th>
+                                    <th>Zip Code</th>
+                                    <th># of Bears</th>
+                                    <th>Date of Sighting</th>
+                                    <th>Unique ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Add New Sightings  -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Add New Bear Sighting</strong>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Entry Form -->
+                        <form>
+                            <div class="form-group">
+                                <label for="bear-type-input">Bear Type</label>
+                                <input class="form-control" id="bear-type-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="notes-input">Notes</label>
+                                <input class="form-control" id="notes-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip-code-input">Zip Code</label>
+                                <input class="form-control" id="zip-code-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="num-bears-input"># of Bears</label>
+                                <input class="form-control" id="num-bears-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="date-input">Date of Sighting</label>
+                                <input class="form-control" id="date-input" type="text">
+                            </div>
+                            <button class="btn btn-primary" id="submit-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

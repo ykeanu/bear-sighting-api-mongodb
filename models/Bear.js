@@ -14,4 +14,5 @@ const bearSchema = new Schema({
 
 const Bear = mongoose.model('bear', bearSchema);
 
+// EXPORT TO ./index
 module.exports = Bear;

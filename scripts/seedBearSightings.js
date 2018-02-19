@@ -1,14 +1,17 @@
-// DEPENDENCIES
-// ================
 const mongoose = require('mongoose');
 const db = require('../models');
-// ================
 
 mongoose.Promise = global.Promise;
+
+// DATABASE CONNECTION
+// ================
 const mongoURI =
   'mongodb://izzykeanu:password@ds241668.mlab.com:41668/bear-sighting';
 mongoose.connect(mongoURI);
+// ================
 
+// SEED INTO DATABASE SCRIPT | EXPORT TO ./seedDB
+// ================
 module.exports = async () => {
   const bearSightingsSeed = [
     {
@@ -44,3 +47,4 @@ module.exports = async () => {
     process.exit(1);
   }
 };
+// ================

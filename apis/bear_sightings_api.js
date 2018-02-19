@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 const Bear = mongoose.model('bear');
 
-// ================ C R U D ================
-
 // CREATE: User POSTS a new bear sighting | Template: <URL>/sighting
 // ================
 module.exports.postBearSighting = async (req, res) => {
   const { bear_type, notes, zip_code, num_bears, date_sighted } = req.body;
+  console.log(req.body);
 
   const newBearSighting = {
     bear_type,
@@ -18,7 +17,6 @@ module.exports.postBearSighting = async (req, res) => {
 
   try {
     const bearSighting = await new Bear(newBearSighting).save();
-
     res.send(bearSighting);
   } catch (error) {
     res.status(500).send(error);
@@ -51,7 +49,6 @@ module.exports.getBearSightingsByQuery = async (req, res) => {
   }
   try {
     const bearSightings = await Bear.find().sort(sort);
-
     res.send(bearSightings);
   } catch (error) {
     res.status(500).send(error);
@@ -66,7 +63,6 @@ module.exports.getBearSightingById = async (req, res) => {
 
   try {
     const bearSighting = await Bear.findOne(_id);
-
     res.send(bearSighting);
   } catch (error) {
     res.status(500).send(error);
