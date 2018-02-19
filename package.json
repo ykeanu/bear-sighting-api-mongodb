@@ -1,0 +1,24 @@
+{
+  "name": "bear-sighting-api-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykeanu/bear-sighting-api-mongodb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykeanu/bear-sighting-api-mongodb/issues"
+  },
+  "homepage": "https://github.com/ykeanu/bear-sighting-api-mongodb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  }
+}
