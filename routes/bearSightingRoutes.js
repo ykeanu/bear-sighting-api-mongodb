@@ -9,7 +9,7 @@ const bear_sightings_api = require('../apis/bear_sightings_api');
 // ================
 router.post('/sighting', bear_sightings_api.postBearSighting);
 router.get('/sighting/search', bear_sightings_api.getBearSightingsByQuery);
-router.get('/sighting/search/:id', bear_sightings_api.getBearSightingById);
+router.get('/sighting/:id', bear_sightings_api.getBearSightingById);
 // ================
 
 module.exports = router;

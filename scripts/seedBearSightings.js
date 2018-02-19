@@ -1,5 +1,9 @@
+// DEPENDENCIES
+// ================
 const mongoose = require('mongoose');
 const db = require('../models');
+// ================
+
 mongoose.Promise = global.Promise;
 const mongoURI =
   'mongodb://izzykeanu:password@ds241668.mlab.com:41668/bear-sighting';
