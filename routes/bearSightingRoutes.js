@@ -2,7 +2,7 @@
 // ================
 const express = require('express');
 const router = express.Router();
-const bear_sightings_api = require('../api/bear_sightings_api');
+const bear_sightings_api = require('../apis/bear_sightings_api');
 // ================
 
 // BEAR SIGHTING ROUTES

@@ -32,7 +32,7 @@ module.exports.getBearSightingsByQuery = async (req, res) => {
 
 // READ -> User READS a bear sighting based on UNIQUE ID
 // ================
-module.exports.getBearSightingsById = async (req, res) => {
+module.exports.getBearSightingById = async (req, res) => {
   // sighting/search/:id
   const bearSightingId = req.params.id;
 

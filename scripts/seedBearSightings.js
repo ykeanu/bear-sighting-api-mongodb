@@ -11,7 +11,7 @@ module.exports = async () => {
       bear_type: 'grizzly',
       notes: 'It was a big one!',
       zip_code: 90210,
-      num_bears: 3,
+      num_bears: 1,
       date_sighted: '2018-02-10'
     },
     {
@@ -23,17 +23,17 @@ module.exports = async () => {
     },
     {
       bear_type: 'brown',
-      notes: 'Family of four!',
-      zip_code: 90045,
-      num_bears: 4,
-      date_sighted: '2018-02-04'
+      notes: 'Mama bear catching salmon with child',
+      zip_code: 92557,
+      num_bears: 2,
+      date_sighted: '2018-02-07'
     }
   ];
 
   try {
     await db.Bear.remove({});
-    const data = await db.Event.collection.insertMany(bearSightingsSeed);
-    console.log(`${data.insertedCount} events successfully seeded`);
+    const data = await db.Bear.collection.insertMany(bearSightingsSeed);
+    console.log(`${data.insertedCount} bear sightings successfully seeded`);
     return;
   } catch (err) {
     console.log(err);
