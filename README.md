@@ -48,9 +48,10 @@ In the command line, type 'npm install' to download node packages for the server
   a. Right click ```index.html``` to view (works best with Google Chrome
 
 ## Built With
-* [Express](https://reactjs.org/docs/hello-world.html) - Javascrupt Framework
-* [MongoDB](https://redux.js.org/) - State Container
-* [Mongoose](https://github.com/ReactTraining/react-router) - Routing/Navigation
+* [Node](https://nodejs.org/en/) - Serverside Javascript
+* [Express](https://expressjs.com/) - Web Framework for Node.js
+* [MongoDB](https://www.mongodb.com/) - NoSQL Database
+* [Mongoose](http://mongoosejs.com/) - MongoDB Object Modeling for Node.js
 * [Mlab](https://mlab.com/) - MongoDB Database Host
 
 ## Client Directory structure
@@ -81,4 +82,3 @@ This project is licensed under the BSD 3-Clause License.
 
 ## Developer
 - Ysrael "Izzy" Hernandez | [GitHub](https://github.com/ykeanu)
-\\
