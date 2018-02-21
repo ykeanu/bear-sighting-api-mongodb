@@ -5,11 +5,11 @@ Using Node.js, create an API that allows users to submit bear sightings as they 
 
 Your API should conform to the following spec:
 ```
-### POST /sighting ###
+POST /sighting
 Example POST body:
 `{ bear_type: 'grizzly', notes: 'It was a big one!', zip_code: '90210', num_bears: 3 }`
 
-### GET /sighting/search ###
+GET /sighting/search
 Return an array of sightings, include a unique ID with each.
 Supported query params, all optional
 `start_date` (inclusive) (default: all time)
@@ -18,7 +18,7 @@ Supported query params, all optional
 `zip_code` (default: all zip codes)
 `sort` (default: created timestamp, ascending. only supported value is `num_bears`)
 
-### GET /sighting/:id ###
+GET /sighting/:id
 Return a single sighting object queried by its ID
 ```
 
