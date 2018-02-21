@@ -1,8 +1,6 @@
 # Bear Sighting | RESTful API with MongoDB
 Bear sightings are on the rise nationwide. Unfortunately, there's no centralized website to upload and access bear sightings. This is a big problem! 
 
-## Live Link
-
 ## Demo
 <!--  <img src="" width="85%" height="85%">  -->
 
