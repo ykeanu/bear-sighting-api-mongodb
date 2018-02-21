@@ -1,6 +1,7 @@
 # Bear Sighting | RESTful API with MongoDB
-Challenge: Bear sightings are on the rise nationwide. Unfortunately, there's no centralized website to upload and access bear sightings. This is a big problem!
+Bear sightings are on the rise nationwide. Unfortunately, there's no centralized website to upload and access bear sightings. This is a big problem! 
 
+## The Coding Challenge
 Using Node.js, create an API that allows users to submit bear sightings as they happen and query the database for recent sightings with certain filters.
 
 Your API should conform to the following spec:
