@@ -27,16 +27,8 @@ Return a single sighting object queried by its ID
 ## Demo
 <!--  <img src="" width="85%" height="85%">  -->
 
-## Installation on Local Machine
+### Get Application Running on Local Machine
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-* Google Chrome
-* Npm 
-* Node.js v8.0+
-
-### Installing
-In the command line, type 'npm install' to download node packages for the server side. Next, navigate to the client folder and 'npm install' a second time. Go to respective package.json files to view dependencies.
 
 1. Navigate to the root folder in the command line. 
 2. Execute the following commands while in root folder:
@@ -46,6 +38,11 @@ In the command line, type 'npm install' to download node packages for the server
     * Starts the server
 3. To view an extremely simple UI to visualize CRUD operations, please navigate to the public folder.
   a. Right click ```index.html``` to view (works best with Google Chrome
+
+### Prerequisites
+* Google Chrome
+* Npm 
+* Node.js v8.0+
 
 ## Built With
 * [Node](https://nodejs.org/en/) - Serverside Javascript
