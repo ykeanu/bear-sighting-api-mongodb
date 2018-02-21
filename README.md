@@ -6,7 +6,7 @@ Bear sightings are on the rise nationwide. Unfortunately, there's no centralized
 ## Demo
 <!--  <img src="" width="85%" height="85%">  -->
 
-### Get Application Running on Local Machine
+### Get Application Running Locally
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 1. Navigate to the root folder in the command line. 
