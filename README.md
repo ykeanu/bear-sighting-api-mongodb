@@ -1,4 +1,7 @@
 # Bear Sighting | RESTful API with MongoDB
+
+My personal solution to a node.js back-end coding challenge!
+
 Bear sightings are on the rise nationwide. Unfortunately, there's no centralized website to upload and access bear sightings. This is a big problem! 
 
 ## Demo
